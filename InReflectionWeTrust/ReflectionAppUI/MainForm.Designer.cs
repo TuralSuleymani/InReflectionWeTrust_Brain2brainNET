@@ -40,6 +40,7 @@
             this.btn_relaod.TabIndex = 0;
             this.btn_relaod.Text = "Reload providers";
             this.btn_relaod.UseVisualStyleBackColor = true;
+            this.btn_relaod.Click += new System.EventHandler(this.btn_relaod_Click);
             // 
             // grbx_providers
             // 

@@ -27,35 +27,14 @@ namespace ReflectionAppUI
         {
             //get path to libs folder
             string libsPath = ApplicationPath.PathTo("libs");
-            //get only dll files
-           string[] providers = Directory.GetFiles(libsPath, "*.dll");
-           
-            //for simplicity excaped LINQ query...
-            //for every provider ....
-            foreach (string provider in providers)
-            {
-                //load it into application RAM..
-               Assembly assembly = Assembly.LoadFile(provider);
+            _providerVisualizer.LoadFrom(libsPath);
 
-                //get all types in assembly
-                Type[] assemblyTypes = assembly.GetTypes();
+        }
 
-                foreach (Type assemblyType in assemblyTypes)
-                {
-                  
-                   Type type = assemblyType.GetInterface("IProvider", true);
-
-                    //if current type implemented IProvider interface then..
-                    if (type != null)
-                    {
-                        //create instance of class at runtime
-                       IProvider prvdr = (IProvider)Activator.CreateInstance(assemblyType);
-
-                        _providerVisualizer.AddProvider(prvdr);
-                    }
-                } 
-            }
-
+        private void btn_relaod_Click(object sender, EventArgs e)
+        {
+            _providerVisualizer.ClearProviders();
+            _providerVisualizer.LoadFrom(ApplicationPath.PathTo("libs"));
         }
     }
 }
