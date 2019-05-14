@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionAppUI", "Reflecti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderProtocol", "ProviderProtocol\ProviderProtocol.csproj", "{437DA435-105B-4156-B219-4CC642C20C92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeInternetProvider", "FakeInternetProvider\FakeInternetProvider.csproj", "{39AFB11D-59D9-4FAF-B727-B37E816E87C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{437DA435-105B-4156-B219-4CC642C20C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437DA435-105B-4156-B219-4CC642C20C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{437DA435-105B-4156-B219-4CC642C20C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AFB11D-59D9-4FAF-B727-B37E816E87C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AFB11D-59D9-4FAF-B727-B37E816E87C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AFB11D-59D9-4FAF-B727-B37E816E87C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AFB11D-59D9-4FAF-B727-B37E816E87C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
