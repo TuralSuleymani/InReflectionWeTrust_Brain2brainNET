@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankOfBank
+namespace ProviderProtocol
 {
-    public class Class1
+   public interface IProvider
     {
+        string Name { get; set; }
+        void OnButtonClicked();
     }
 }
